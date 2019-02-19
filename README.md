@@ -1,14 +1,14 @@
 # Code Fellows 401 White Board Challeges
 
 
-# Linked List Insertions
-<!-- Short summary or background information -->
+## Linked List Insertions
+Add the ability to edit the linked list
 
-## Challenge
-<!-- Description of the challenge -->
+### Challenge
+Add methods for insert before and insert afer a value
 
-## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+### Approach & Efficiency
+Loop through until value is found then make necessary challenges. Time: O(n), Space: O(1)
 
-## Solution
-<!-- Embedded whiteboard image -->
+### Solution
+Two new methods insertBefore and insertAfter

@@ -64,6 +64,35 @@ class LinkedList{
     // Vinicio - if I got to this point, I didn't find anything
     return null;
   }
+
+  // Andrew - insert a new node before the node with the given value
+  insertBefore(value, newValue) {
+    const newNode = new Node(newValue);
+    // Andrew - edge case if first new is value
+    if (this.head.value === value) {
+      newNode.next = this.head;
+      this.head = newNode;
+    }
+    while(current.next) {
+      if (current.next.value === value) {
+        const tmp = current.next;
+        current = newNode;
+        newNode.next = tmp;
+      }
+    }
+  }
+
+  // Andrew - insert new node after the node with given value
+  insertAfter(value, newValue) {
+    const newNode = new Node(newValue);
+    while(current.next) {
+      if (current.value === value) {
+        const tmp = current.next;
+        current.net = newNode;
+        newNode.next = tmp;
+      }
+    }
+  }
 }
 
 module.exports = LinkedList;
