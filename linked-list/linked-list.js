@@ -64,6 +64,32 @@ class LinkedList{
     // Vinicio - if I got to this point, I didn't find anything
     return null;
   }
+
+  insertBefore(value, newValue) {
+    const newNode = new Node(newValue);
+    if (this.head.value === value) {
+      newNode.next = this.head;
+      this.head = newNode;
+    }
+    while(current.next) {
+      if (current.next.value === value) {
+        const tmp = current.next;
+        current = newNode;
+        newNode.next = tmp;
+      }
+    }
+  }
+
+  insertAfter(value, newValue) {
+    const newNode = new Node(newValue);
+    while(current.next) {
+      if (current.value === value) {
+        const tmp = current.next;
+        current.net = newNode;
+        newNode.next = tmp;
+      }
+    }
+  }
 }
 
 module.exports = LinkedList;
